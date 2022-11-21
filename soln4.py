@@ -5,8 +5,10 @@ x= [255,255]
 y= [255,0]
 m = [0,255]
 n = [0,0]
+#initializing the for loop
 for i in range(len(matrix)):
     for j in range(len(matrix[0])):
+        #checking the codition whther element is zero or not
         if matrix[i][j] == 0:
             if x[0] > i:
                 x[0] = i
@@ -24,7 +26,7 @@ for i in range(len(matrix)):
                 n[0] = i
             if n[1] < j:
                 n[1] = j
-
+#checking the condition
 if x[1] != n[1]:
     x[1] = min(x[1],m[1])
     m[1] = min(x[1],m[1])
