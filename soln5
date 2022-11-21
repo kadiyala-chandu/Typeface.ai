@@ -1,0 +1,30 @@
+One of the crucial techniques for automatically retrieving third-party data is web scraping.Web scraping is a process that automatically extracts unstructured data from websites and stores it in a structured fashion. Scraping increases website traffic and increases the risk of a website server failure. As a result, not all websites permit scraping. How do you determine whether a website is permitted or not? You can view the website's "robots.txt" file. You may view information on whether the website host permits you to scrape the website by adding robots.txt after the URL that you wish to collect data from.
+How web scraping operates:
+Web scraping simply involves a bot person scanning several website sites and copying and pasting all the contents. The data is contained in the response you receive from the server after the code has been run. The following step is to parse the response data and extract the desired components.
+Web scraping procedure:
+ Method 1: If a website keeps all of its data in HTML, you can use code to directly download the HTML contents and extract the necessary data.
+What to do next:
+1. Examine the HTML of the website you wish to crawl.
+2. Use code to access the website's URL and get the entire page's contents in HTML
+3. Put the content you downloaded into a readable format.
+4. Remove pertinent data and save it in an organised format.
+5.Repeating steps 2-4 may be necessary if the material is spread across numerous pages of the website.
+Method 2: You can replicate the request and directly access the data from the API if a website saves data in an API and queries it each time a user visits the website.
+1. Examine the URL you wish to crawl's XHR network part.
+2. Identify the request-response that provides you with the desired data.
+3. Simulate the request in your code and retrieve the data from the API depending on the request type (post or get), as well as the request header and payload. The data obtained from APIs is typically in a relatively attractive format.
+4. Extract the pertinent information you require.
+5.If the API has a query size restriction, you must use a "for loop" to continually get all the data.
+Save the content and images from the website:
+With a simple right-click. Sometimes, yes, but if that were the case, you wouldn't be reading this essay. There are two causes why why right-clicking an image sometimes doesn't save it:
+1. This is prohibited on some websites.
+2. This technique typically only captures the tiniest version of the image, which might not be appropriate.
+Steps for saving photos in Chrome:
+1. Visit the website where the desired image is located.
+2. Hit F12.
+Note: In order for your F12 to function on some keyboards, you may need to press the Fn key. You may also just press Ctrl, Shift, and I as a shortcut. 
+3. to access the element inspector, click it.
+4. Once you click on the image in question, the image URL will show up in the code below.
+Different websites have slightly different layouts. The URL can appear in the right-hand column rather than the left.
+5. From the context menu, select Open in a new tab.
+6. Right-click the image in the new tab, select Save image as, and then give the image a name and select where on your computer you want to save it.
